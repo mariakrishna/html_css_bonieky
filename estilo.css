@@ -1,0 +1,43 @@
+img {
+    width: 200px;
+}
+
+/*seleciona todos os itens de imagem da pagina para alteração*/
+
+#titulo {
+    background-color: red; /*tonalidades são escolhidas por numeros hexagecimais na maioria dos casos, mas tbm podem ser pelas predefiniçãoes do html ou pelo RGB*/
+
+    color: cadetblue;
+    font-size: 25px;
+}
+
+/*usada para propriedade específicas em elementos específicos*/
+.texto {
+    color: coral;
+    font-size: 25px;
+}
+
+/*usada na maioria dos casos*/
+
+ul li { 
+    color: pink;
+}
+/*forma de escopar a propriedade, assim ele procura os li dentro dos ul para fazer as mudanças*/
+
+NOME_DO_ELEMENTO {
+ font: optional;
+}
+
+#ID_DO_ELEMENTO {
+font-size: large;
+}
+
+.CLASS_DOELEMENTO{
+left: 25rem;
+}
+
+ELEMENTO1,
+.ELEMENTO2
+#ELEMENTO3 {
+margin: 25px;
+} /*atribui as mesmas mudanças a todos os elementos listadoa*/
