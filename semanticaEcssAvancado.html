@@ -9,9 +9,17 @@
   </head>
   <body>
     <form>
-      <input type="text" name="usuario" placeholder="Usuário" /><br /><br />
+      Usuário<br />
+      <input
+        type="text"
+        name="usuario"
+        placeholder="Usuário"
+        autofocus
+      /><br /><br />
+      <!--o autofocus faz com que o cursor já apareca no input, pronto para o usuário digitar-->
       <!--o placeholder preve o que o campo faz, algo provisório no campo antes do input do usuário-->
-      <!--muito usado em sistemas de busca de sites-->
+      <!--muito usado em sistemas de busca de sites e páginas em que já se sabe o interesse do usuário ao entrar-->
+      Senha<br />
       <input type="password" name="senha" placeholder="Senha" />
       <input type="submit" value="Vai!" />
     </form>
