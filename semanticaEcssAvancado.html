@@ -14,14 +14,20 @@
         type="text"
         name="usuario"
         placeholder="Usuário"
+        size="10"
         autofocus
+        required
       /><br /><br />
       <!--o autofocus faz com que o cursor já apareca no input, pronto para o usuário digitar-->
       <!--o placeholder preve o que o campo faz, algo provisório no campo antes do input do usuário-->
-      <!--muito usado em sistemas de busca de sites e páginas em que já se sabe o interesse do usuário ao entrar-->
+      <!--muito usados em sistemas de busca de sites e páginas em que já se sabe o interesse do usuário ao entrar-->
       Senha<br />
-      <input type="password" name="senha" placeholder="Senha" />
-      <input type="submit" value="Vai!" />
+      <input type="password" name="senha" placeholder="Senha" required />
+      <!--size o tamanho se ajustar a quantidade de caracteres, mas não é muito utilizado-->
+      <input type="submit" maxlength="4" value="Vai!" />
+      <!--maxleght não permite que o usuário digite mais que a quantidade de caracteres especificados-->
+      <!--required input é quando o usuário é obrigado a adicionar o input para conseguir enviar o formulário-->
+      <!--ajuda na validação dos dados-->
     </form>
   </body>
 </html>
