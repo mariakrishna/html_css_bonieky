@@ -11,3 +11,34 @@ form {
   justify-content: center;
   margin: 100px;
 }
+
+#teste {
+  background-color: aqua;
+  margin-top: 200px;
+  margin-left: 200px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px; /*cria uma borda arredondada. em 50%, vira um circulo*/
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 80px;
+}
+
+input {
+  border-radius: 10px;
+}
+
+.exemplo {
+  width: 500px;
+  height: 200px;
+  background-color: blue; /*alguns navegadores podem não suportar o linear gradient, enão é necessário colocar uma sintaxe padrão ou proteções para cada navegador*/
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    purple,
+    pink
+  ); /*as medidas podem ser em graus*/
+}
