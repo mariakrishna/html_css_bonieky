@@ -3,66 +3,31 @@ body {
   display: grid;
 }
 
-form {
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-  background-color: rgba(139, 139, 139, 0.582);
-  justify-content: center;
-  margin: 100px;
-}
-
-#teste {
-  background-color: aqua;
-  margin-top: 200px;
-  margin-left: 200px;
-  width: 300px;
-  height: 300px;
-  border-radius: 20px; /*cria uma borda arredondada. em 50%, vira um circulo*/
-  border-bottom-left-radius: 40px;
-  border-top-right-radius: 80px;
-}
-
-input {
-  border-radius: 10px;
-}
-@keyframes umexemplo {
-  /*porcentagens representam a proporção das propriedades renderizadas de acordo com o tempo*/
-  0% {
-    background-color: red;
-    top: 0;
-    left: 0;
-  }
-  25% {
-    background-color: yellow;
-    top: 0px;
-    left: 200px;
-  }
-  50% {
-    background-color: green;
-    top: 200px;
-    left: 200px;
-  }
-  75% {
-    background-color: blue;
-    top: 200px;
-    left: 0px;
-  }
-  100% {
-    background-color: purple;
-    top: 0;
-    left: 0;
-  }
-}
-
-/*para animações, primeiro se criam os frames, os quadros da animação e aplica à um elemento*/
 .exemplo {
-  width: 150px;
+  width: 200px;
   height: 200px;
   animation-name: umexemplo;
   background-color: red;
-  position: absolute;
-  animation-duration: 4s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 5px -5px 5px #888888;
+  border-radius: 50%; /*a sombra acompanha o formato do elemento*/
+  text-shadow: 2px -4px 8px #000;
+  transition: all 1s linear; /*determina o ritmo de transição das propriedades. all aplica pra todas as propriedades, duração, linear diz que a transição começa e termina com a mesma velocidade*/
+  /*aplica sombra no elemento. precisa de 4 propriedades, para direita, para baixo, esfumaçado e cor*/
+}
+
+.exemplo:hover {
+  /*faz troca de propriedade quando o cursor passa por cima*/
+  width: 300px;
+  background-color: black;
+}
+
+a {
+  color: aliceblue;
+  transition: 2s;
+}
+
+a:hover {
+  color: aqua;
 }
