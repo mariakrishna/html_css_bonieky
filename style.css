@@ -3,11 +3,12 @@ body {
   display: grid;
 }
 
-p {
-  margin-left: 20px;
+figure {
+  padding: 5px;
+  margin: 0;
+  border: 1px dotted #000;
 }
 
-q {
-  font-style: italic;
-  color: #555;
+figcaption {
+  color: #888888;
 }
