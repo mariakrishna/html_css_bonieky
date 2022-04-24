@@ -4,30 +4,11 @@ body {
 }
 
 .exemplo {
-  width: 200px;
-  height: 200px;
-  animation-name: umexemplo;
-  background-color: red;
   margin: auto;
   margin-top: 100px;
-  box-shadow: 5px -5px 5px #888888;
-  border-radius: 50%; /*a sombra acompanha o formato do elemento*/
-  text-shadow: 2px -4px 8px #000;
-  transition: all 1s linear; /*determina o ritmo de transição das propriedades. all aplica pra todas as propriedades, duração, linear diz que a transição começa e termina com a mesma velocidade*/
-  /*aplica sombra no elemento. precisa de 4 propriedades, para direita, para baixo, esfumaçado e cor*/
-}
-
-.exemplo:hover {
-  /*faz troca de propriedade quando o cursor passa por cima*/
-  width: 300px;
-  background-color: black;
-}
-
-a {
-  color: aliceblue;
-  transition: 2s;
-}
-
-a:hover {
-  color: aqua;
+  width: 150px;
+  height: 200px;
+  border: 2px solid black;
+  overflow: hidden; /*esconde os quebrados, mas não é uma boa prática*/
+  word-wrap: break-word; /*não quebra o espaçamento da aplicação*/
 }
