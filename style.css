@@ -3,12 +3,11 @@ body {
   display: grid;
 }
 
-.exemplo {
-  margin: auto;
-  margin-top: 100px;
-  width: 150px;
-  height: 200px;
-  border: 2px solid black;
-  overflow: hidden; /*esconde os quebrados, mas não é uma boa prática*/
-  word-wrap: break-word; /*não quebra o espaçamento da aplicação*/
+p {
+  margin-left: 20px;
+}
+
+q {
+  font-style: italic;
+  color: #555;
 }

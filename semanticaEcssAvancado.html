@@ -1,28 +1,47 @@
 <!DOCTYPE html>
-<html lang="en pt-br jp">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--para compatilhar links no facebook-->
-    <meta property="og:url" content="https://mariakrishna.dev/" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Titulo do artigo" />
-    <meta proprety="og:description" content="descrição do conteúdo" />
-    <meta proprety="og:image" content="url da image" />
-    <!--1200x630 é o padrão-->
     <link rel="stylesheet" href="style.css" />
-    <title>Página de Teste</title>
+    <title>Document</title>
   </head>
   <body>
-    <div class="exemplo">
-      <!--Webkit é um engine responsável por desenhar o html e css na tela. O IE
-      antes tinha um engine chamada Trident. Hoje é o EdgeHTML.
-      Cadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa navegador tem o seu. Por isso há
-      pequenas diferenças de espaçamento, entre outros. Há um consenso mas cada
-      navegador interpreta as informações de forma diferente. Firefox = Gecko
-      Opera = Presto (antes), Webkit Safari = Webkit Chrome = Webkit (Blink)-->
-      Página de teste
-    </div>
+    <!--codigos que ajudam na acessibidlidade e ajudam mecanismos de buscas-->
+    <dl>
+      <!--description list - para fazer listas-->
+      <dt>
+        <!--titulo-->
+        Café
+      </dt>
+      <dd>
+        <!--descrição do item-->
+        bebida quente de cor escura e sabor amargo
+      </dd>
+      <dt>Leite</dt>
+      <dd>
+        bebida proveniente de mamíferos fêmaeas que deram cria, na função de
+        alimentá-los.
+      </dd>
+
+      <!--Citações-->
+      <p>
+        Hange Zoe<br />
+        <q
+          ><!--automaticamente gera aspas e pode ter os estilos alterados via css, como todos os outros elementos-->
+          Dane-se seu complexo de inferioridade. Não fuja da realidade. Mesmo em
+          momentos de profundo desespero, acho que ainda podemos encontrar
+          esperança, não é? Um dia ou outro, todas as pessoas de quem você gosta
+          morrem.
+        </q>
+        <blockquote cite="https://www.pensador.com/melhores_frases_de_shingeki_no_kyojin_attack_on_titan/">
+          A única coisa que podemos fazer é acreditar que não vamos nos arrepender da escolha que fizemos. Acho que a dor é a melhor forma de obter disciplina. Não se esqueça de fazer o seu melhor para permanecer vivo. Portanto, escolha você mesmo, seja qual for a decisão da qual menos se arrependerá.
+          <br>
+          Levi Ackerman
+        </blockquote><!--cria uma quebra visual. o cite adiciona a fonte da citação-->
+      </p>
+    </dl>
+    
   </body>
 </html>
