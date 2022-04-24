@@ -1,0 +1,118 @@
+:root {
+  --bg-color: #000;
+  --bg-secundary: #444;
+  --font-color: #fff;
+  --font-size-big: 25px;
+  --font-size-small: 15px;
+}
+/*o ideal é criar as variáveis no root para que possarm fazer as alterações em todo o documento*/
+/*se a variável for criada dentro de um elemento ou classe, ela só irá afetar o mesmo*/
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color, #ff0);
+  display: flex;
+}
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: blue;
+    font-size: var(--font-size-big);
+  }
+}
+
+@media print and (min-width: 750px) and (max-width: 999px) {
+  body {
+    background-color: purple;
+    font-size: 30px;
+  }
+}
+
+/*print manda funções para impressão*/
+
+@media screen and (max-width: 350px) {
+  body {
+    background-color: #fff;
+    color: #000;
+    font-size: var(--font-size-small);
+  }
+
+  img {
+    width: min(50%, 300px);
+    height: 100px;
+    object-fit: cover;
+  }
+
+  /*contain redimenciona o tamanho da imagem. mantem a qualidade da imagem*/
+  /*cover corta a imagem para não distorcer. o centro da imagem gannha destaque. mais usado*/
+  /*none ajusta o tamanho e corta*/
+  /*scaledown é similar com o contain mas é menos usado. diminui a qualidade da imagem*/
+}
+
+table {
+  border: 6px dotted #000;
+}
+
+@media all {
+  h1 {
+    display: none;
+  }
+}
+
+/*div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+}*/
+
+@media (aspect-ratio: 1/1) {
+  body {
+    background-color: #ff0;
+  }
+}
+
+@media (min-aspect-ratio: 3/2) {
+  body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+  }
+}
+
+.videos {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+.video-area {
+  position: relative;
+  height: 0;
+  background-color: #444;
+  padding: 0 0 56.25%;
+}
+
+.video-area iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.auladecalculo {
+  width: calc(100% - 20px);
+  height: 200px;
+  background-color: #444;
+}

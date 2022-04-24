@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  /*aplica mudanças em todo o elemento*/
+  margin: 0; /*não é uma propriedade herdada*/
+  height: 50vh; /*unidade relativa ao viewport*/
+  background-color: darkblue;
+  color: rgb(255, 100, 100);
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  /*a classe especifica que as mudanças irão ocorrer apenas nas tags influenciadas por ela */
+  /*quanto mais específico se é sobre a mudança de um elemento, o mais específico ganha*/
+  width: calc(
+    100% - 50px
+  ); /*medida relativa - vai depender dos parâmetros definidos pelo dispositivo*/
+  height: 300px; /*medida absoluta - não sofrem interferência de outros elementos do site - px, in, cm, mm*/
+  font-size: 32px;
+  background-color: #000;
+  color: aqua;
+  border: 3px solid; /*não é uma propriedade herdada*/
+}
+/*cores e tamanhos de texto normalmente são propriedades herdadas*/
+
+h1 {
+  font-size: 3rem;
+  border: 1px solid currentColor;
+}
+.box {
+  width: 50%; /*porcentagem do espaço disponivel para renderização*/
+  height: 20ex; /*usa como padrão na altura da letra x na fonte utilizada*/
+  background-color: #999;
+  font-size: 2rem;
+}
+
+.box h1 {
+  font-size: inherit; /*força a usar a propriedade a herdar a configuração anterior*/
+  color: red;
+}
+
+.box-box {
+  width: 50vw;
+  background-color: black;
+}
+
+.box-interno {
+  width: 10em; /*atrelado ao fontsize do item anterior, o elemento pai*/
+  height: 10rem;
+  background-color: #333;
+}

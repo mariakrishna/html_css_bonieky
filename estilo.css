@@ -1,8 +1,27 @@
 img {
     width: 200px;
+    border: 5px solid red;
+    border-radius: 35px;
+    overflow: hidden;
 }
 
 /*seleciona todos os itens de imagem da pagina para alteração*/
+
+p {
+    /*todos os elementos podem receber borda*/
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 5px;
+    /*Pode receber 3 informações distintas*/
+}
+
+div { /*fazendo uma bola*/
+    background-color: #00ff00;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 3px solid darkgreen;
+}
 
 #titulo {
     background-color: red; /*tonalidades são escolhidas por numeros hexagecimais na maioria dos casos, mas tbm podem ser pelas predefiniçãoes do html ou pelo RGB*/
@@ -40,4 +59,5 @@ ELEMENTO1,
 .ELEMENTO2
 #ELEMENTO3 {
 margin: 25px;
-} /*atribui as mesmas mudanças a todos os elementos listadoa*/
+} /*atribui as mesmas mudanças a todos os elementos listados*/
+
