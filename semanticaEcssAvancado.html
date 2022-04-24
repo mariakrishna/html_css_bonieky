@@ -8,24 +8,12 @@
     <title>Página de Teste</title>
   </head>
   <body>
-    <form method="POST">
-      <input type="search" />
-      <!--inputs de tipos específicos tem atribuições específicas-->
-      <input type="email" name="email" required />
-      <!--faz validações dos dados-->
-      <input type="submit" value="Vai!" />
-      <input type="url" />
-      <input type="tel" />
-      <!--não tem validação, mas no celular abre o teclado próprio pra esse tipo de informação-->
-      <input type="number" />
-      <input type="range" min="1" max="100" />
-      <input type="date" />
-      <input type="month" />
-      <input type="week" />
-      <input type="time" />
-      <input type="datetime" />
-      <input type="datetime-local" />
-      <input type="color" />
-    </form>
+    <!--o atributo data ajuda a fazer identificação de informação-->
+    <!--pode ser extendido com qualquer nome-->
+    <div data-nome="Maria" data-sobrenome="Vieira">
+      olá
+      <!--é um atributo/parâmetro q funciona com qualquer tag-->
+      <!--as informações do atributo data não aparecem na tela, mas podem ser usadas em conjunto com linguagens de programação que fazem comunicação com o computador, como o JavaScript-->
+    </div>
   </body>
 </html>
