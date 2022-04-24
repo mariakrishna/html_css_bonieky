@@ -2,3 +2,12 @@ body {
   margin: 0;
   display: grid;
 }
+
+form {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  background-color: rgba(139, 139, 139, 0.582);
+  justify-content: center;
+  margin: 100px;
+}
