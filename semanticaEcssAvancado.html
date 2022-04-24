@@ -8,40 +8,24 @@
     <title>Página de Teste</title>
   </head>
   <body>
-    <!--todos os navegadores modernos principais oferecem suporte ao html5, exceto por alguns elementos muito avançados como reconhecimento de voz, p.ex-->
-    <header>
-      <!--conteúdos principal de introdução da página, ajuda na busca dos navegadores-->
-      <h1>Título da Página</h1>
-    </header>
-    <nav>
-      <!--diz para motores de busca como fazer a linkagem dos links da sua pagina, onde estão os menus principais da página-->
-      <!--tags específicas além de ajudar na busca, ajudam os leitores e interpretadores para pessoas com necessidade especiais que precisam que algum software faça uma leitura dos elementos-->
-      <a href="">Link 1</a>
-      <a href="">Link 2</a>
-      <a href="">Link 3</a>
-      <a href="">Link 4</a>
-      <a href="">Link 5</a>
-      <a href="">Link 6</a>
-      <section>
-        <!--pode ser usada em vários locais da página-->
-        <!--separa o conteúdo da página em assuntos-->
-        <article>
-          <!--diz para o motor de buscar que aqui consta o conteudo principal do site-->
-          <!--conteudo de blog, noticias em portais, etc.-->
-          <mariakrishna>Meu nome é Maria Krishna</mariakrishna
-          ><!--é possivel criar tags personalizadas--><br />
-          Meu dia preferido é o
-          <time datetime="1992-02-13">dia do meu aniversário</time>
-          <!--a tag time não tem efeito visual, mas especifica para o motor de busca que a informação é uma data ou tempo-->
-        </article>
-        <aside>
-          <!--contrário do artical, é conteúdo secundário da página-->
-        </aside>
-      </section>
-      <footer>
-        <!--rodapé da página-->
-        <!--usar as tags semanticas ajuda também nas configurações do css-->
-      </footer>
-    </nav>
+    <form method="POST">
+      <input type="search" />
+      <!--inputs de tipos específicos tem atribuições específicas-->
+      <input type="email" name="email" required />
+      <!--faz validações dos dados-->
+      <input type="submit" value="Vai!" />
+      <input type="url" />
+      <input type="tel" />
+      <!--não tem validação, mas no celular abre o teclado próprio pra esse tipo de informação-->
+      <input type="number" />
+      <input type="range" min="1" max="100" />
+      <input type="date" />
+      <input type="month" />
+      <input type="week" />
+      <input type="time" />
+      <input type="datetime" />
+      <input type="datetime-local" />
+      <input type="color" />
+    </form>
   </body>
 </html>
