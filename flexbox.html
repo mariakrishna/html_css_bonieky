@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox</title>
+    <!-- o flexbox transforma as box do site flexívies e adaptáveis-->
+    <!--o tamanho dos itens tem que estar correlacionados para funcionar-->
+    <!--por padrão a organização é em forma de linha, horizontal-->
+    <!--é possivel mudar a orientação com flex direction-->
+    <style type="text/css">
+      .container {
+        display: flex;
+        background-color: #dddddd;
+        flex-direction: row; /*row é o padrão, há também columns, reverse, etc*/
+        margin: 10px;
+      }
+
+      .div1 {
+        flex: 1; /*dispões os itens separando o espaço igualmente entre os elemento, usando todo o espaço disponível, independente da margin*/
+        background-color: #ff0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      .div2 {
+        flex: 3; /*tamanhos 3x do 1*/
+        background-color: #ff0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+      }
+      .div3 {
+        flex: 2; /*é o dobro do tamanho dos itens do grupo 1*/
+        background-color: #ff0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      .div4 {
+        flex: 4; /*calcula automaticamente os espaços que cada item ocupa*/
+        background-color: #ff0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div1">1</div>
+      <div class="div2">2</div>
+      <div class="div3">3</div>
+      <div class="div4">4</div>
+    </div>
+  </body>
+</html>
