@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 120px;
+  display: flex; /*alinhando os itens em linhas*/
+  justify-content: center; /*colocando o site no meio da tela*/
+}
+
+.container {
+  /*parte do conteúdo do site*/
+  width: 990px;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+}
