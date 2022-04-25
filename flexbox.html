@@ -2,31 +2,29 @@
 <html>
   <head>
     <title>Flexbox</title>
-    <!-- o flexbox transforma as box do site flexívies e adaptáveis-->
-    <!--o tamanho dos itens tem que estar correlacionados para funcionar-->
-    <!--por padrão a organização é em forma de linha, horizontal-->
-    <!--é possivel mudar a orientação com flex direction-->
     <style type="text/css">
       .container {
-        display: flex;
-        flex-wrap: wrap;
-        height: 700px;
-        justify-content: space-around; /*alinha na direção que tá sendo exibido, independete de ser linha ou coluna*/
-        align-items: center; /*alinha na direção contrária*/
-        flex-direction: row; /*row é o padrão, há também columns, reverse, etc*/
-        margin: 10px;
+          display: flex;
+          height: 500px;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          background-color: #ddd;
+          align-content: flex-end;
       }
-      /* as propriedades passadas para o justify conten e pro align itens são as mesmas, o que muda é a direção de disposição*/
-      /*space around alinha os itens como o mesmo espaçamento entre eles, ocupando o tamanho disponível*/
-      /*sparece between cola o primeiro e o ultimo item nos cantos e espalha o restante dos elementos no espaço disponível*/
+
       .container div {
-        width: 100px;
-        height: 100px; /*a prioridade é caber na linha, então quando o espaço não é suficiente, ele realinha os itens*/
-        /*flex: 1; dispões os itens separando o espaço igualmente entre os elemento, usando todo o espaço disponível, independente da margin*/
-        background-color: #ff0000;
-        margin: 10px;
-        padding: 10px;
-        font-size: 20px;
+          width: 100px;
+          height: 100px;
+          background-color: #f00;
+          margin: 10px;
+          padding: 10px;
+          font-size: 20px;
+      }
+
+      .div3 {
+          align-self: flex-end; /*sobreescreve o align itens do container*/
+          order: 2; /*muda a ordem dos itens sem mexer no html ou javascript*/
       }
     </style>
   </head>
@@ -35,6 +33,17 @@
       <div class="div1">1</div>
       <div class="div2">2</div>
       <div class="div3">3</div>
-    </div>
-  </body>
+      <div class="div4">4</div>
+      <div class="div5">5</div>
+      <div class="div3">6</div>
+    <div class="div3">7</div>    
+    <div class="div3">8</div>
+    <div class="div3">9</div>  
+     <div class="div3">10</div>  
+      <div class="div3">11</div>  
+       <div class="div3">12</div>
+        <div class="div3">13</div>    
+     <div class="div3">14</div>  
+      <div class="div3">15</div>  
+    </body>
 </html>
