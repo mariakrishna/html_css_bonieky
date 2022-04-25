@@ -9,36 +9,20 @@
     <style type="text/css">
       .container {
         display: flex;
-        background-color: #dddddd;
+        flex-wrap: wrap;
+        height: 700px;
+        justify-content: space-around; /*alinha na direção que tá sendo exibido, independete de ser linha ou coluna*/
+        align-items: center; /*alinha na direção contrária*/
         flex-direction: row; /*row é o padrão, há também columns, reverse, etc*/
         margin: 10px;
       }
-
-      .div1 {
-        flex: 1; /*dispões os itens separando o espaço igualmente entre os elemento, usando todo o espaço disponível, independente da margin*/
-        background-color: #ff0000;
-        margin: 10px;
-        padding: 10px;
-        font-size: 20px;
-      }
-
-      .div2 {
-        flex: 3; /*tamanhos 3x do 1*/
-        background-color: #ff0000;
-        margin: 10px;
-        padding: 10px;
-        font-size: 20px;
-      }
-      .div3 {
-        flex: 2; /*é o dobro do tamanho dos itens do grupo 1*/
-        background-color: #ff0000;
-        margin: 10px;
-        padding: 10px;
-        font-size: 20px;
-      }
-
-      .div4 {
-        flex: 4; /*calcula automaticamente os espaços que cada item ocupa*/
+      /* as propriedades passadas para o justify conten e pro align itens são as mesmas, o que muda é a direção de disposição*/
+      /*space around alinha os itens como o mesmo espaçamento entre eles, ocupando o tamanho disponível*/
+      /*sparece between cola o primeiro e o ultimo item nos cantos e espalha o restante dos elementos no espaço disponível*/
+      .container div {
+        width: 100px;
+        height: 100px; /*a prioridade é caber na linha, então quando o espaço não é suficiente, ele realinha os itens*/
+        /*flex: 1; dispões os itens separando o espaço igualmente entre os elemento, usando todo o espaço disponível, independente da margin*/
         background-color: #ff0000;
         margin: 10px;
         padding: 10px;
@@ -51,7 +35,6 @@
       <div class="div1">1</div>
       <div class="div2">2</div>
       <div class="div3">3</div>
-      <div class="div4">4</div>
     </div>
   </body>
 </html>
