@@ -2,18 +2,42 @@
 <html>
   <head>
     <title>Flexbox</title>
+    <!-- o flexbox transforma as box do site flexívies e adaptáveis-->
+    <!--o tamanho dos itens tem que estar correlacionados para funcionar-->
+    <!--por padrão a organização é em forma de linha, horizontal-->
+    <!--é possivel mudar a orientação com flex direction-->
     <style type="text/css">
-      div {
-        width: 50%;
-        height: 200px;
+      .container {
+        display: flex;
+        background-color: #dddddd;
+        flex-direction: row; /*row é o padrão, há também columns, reverse, etc*/
+        margin: 10px;
+      }
+
+      .container2 {
+        display: flex;
+        background-color: #000;
+        flex-direction: row-reverse;
+      }
+      .container div,
+      .container2 div {
         background-color: #ff0000;
         margin: 10px;
-        float: left;
+        padding: 10px;
+        font-size: 20px;
       }
     </style>
   </head>
   <body>
-    <div></div>
-    <div></div>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <div class="container2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
   </body>
 </html>
