@@ -2,3 +2,13 @@ body {
   margin: 0;
   display: grid;
 }
+
+figure {
+  padding: 5px;
+  margin: 0;
+  border: 1px dotted #000;
+}
+
+figcaption {
+  color: #888888;
+}
