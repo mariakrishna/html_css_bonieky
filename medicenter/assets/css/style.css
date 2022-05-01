@@ -31,6 +31,16 @@ header {
 
 .menuMobile {
   display: none;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mm_line {
+  height: 3px;
+  background-color: #39aae1;
 }
 
 nav ul,
@@ -437,16 +447,6 @@ footer .widget_title_text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  .mm_line {
-    height: 3px;
-    background-color: #39aae1;
   }
 
   #geral section {
